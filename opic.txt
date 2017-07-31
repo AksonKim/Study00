@@ -36,8 +36,9 @@ I think my home is a good place to live.
 In the past, I lived in a small apartment. 
 but, on the other hand, I live in a large apartment now.
 Compared to my old house, my current house is brighter and more organized.
-My old house had two bedrooms, but now, my current house has three bedrooms with tow bathrooms.
+My old house had two bedrooms, but now, my current house has three bedrooms with two bathrooms.
 overall, my current house is better.
+
 저는 예전에 작은 아파트에 살았지만, 현재는 큰 아파트에 살고 있습니다. 
 예전의 집과 비교해 보면, 현재 살고 있는 집이 더 밝고, 잘 정돈되어 있습니다.
 예전 집은 침실이 두개 였지만, 지금 집은 네개의 침실과 두 개의 화장실이 있습니다.
@@ -61,35 +62,39 @@ Now, my house is much better than before.
 이 밖에도, 저는 집 안의 가구들을 다시 배치했습니다. 제 방에 있던 옷장을 옷 방으로 사용 중인 세 변째 방을 ㅗ옮겼습니다.
 지금은 방이 더 넓어 보입니다. 지금 저희 집은 전보다 훨씬 더 좋아졌습니다.
 
-
 - 방묘사
 I live in an apartment with my family in Seoul.
-My rooms is cozy and comfortable.
-As soon as i enter my room, I can see a comfortable bed on the left. 
-Right next to the bed, there is a closet. 
-On the right side of my room, there is a desk, a char, 
-a bookshelf with many books, and a dressing table.
+My rooms is simple and comfortable.
+As soon as i enter my room, I can see a well-organized desk and a computer on the left. 
+Right next to the desk, there is a closet. 
+On the right side of my room, there is a comfortable bed.
+Although my room is smaller than dressing room.
 Overall, my room is a good place to relax.
 
 저는 가족과 함께 서울에 있는 아파트에 살고 있습니다.
-제 방은 아늑하고 편안합니다. 방에 들어서면, 왼쪽에 편안한 침대가 보입니다. 침대 바로 옆에는 옷장이 있습니다.
-방의 오른편에는 책상과 의자, 많은 책이 꽂혀 있는 책장과 화장대가 있습니다. 
-전반적으로 제 방은 휴식을 취하기 좋은 곳입니다.
+제 방은 심플하고 편안합니다. 
+방에 들어서면, 왼쪽에 책상과 컴퓨터가 보입니다. 
+책상 바로 옆에는 편안한 침대가 있습니다.
+비록 제 방은 옷방으로 사용하는 방보다 작지만
+무엇보다도 제 방은 휴식을 취하기 좋은 곳 입니다.
+
 
 3. 동네
 - 동네묘사
 I live in an apartment with my family in Seoul.
 My neighborhoods is safe and clean because I live in an apartment complex.
-In my town, there are many amenties such as parks, restaurants, schools, hospitals, banks, markets, and stores.
-I often go to Han River Park, which is near my house. 
-When I go there, I take a rest along the Han River.
-In spring, it is a great cherry-blossom place so I can enjoy seeing them at the park.
+In my town, there are many amenties such as banks, bakeries, restaurants, large markets, and stores.
+I often go to the bakery, which is near my house.
+When I go there, I buy freshly baked bread.
+because, My mother and I love bread very much.
 Overall, my neighborhood is a good place to live.
 
 저는 가족과 함께 서울에 있는 아파트에 살고 있습니다.
-저는 아파트 단지에 살고 있어서 동네가 안전하고 깨끗합니다. 그곳에는 공원과 레스토랑, 학교, 병원, 은행, 시장이나 상점들과 같은 편의 시설이 많이 있습니다.
-저는 종종 집 근처의 한강 공원에 갑니다.
-그곳에 가면, 한강변에서 휴식을 취합니다. 봄이면, 멋진 벚꽃을 즐길 수 있는 곳이기도 합니다.
+저는 아파트 단지에 살고 있어서 동네가 안전하고 깨끗합니다. 
+그곳에는 은행, 빵집, 음식점 시장이나 상점들과 같은 편의 시설이 많이 있습니다.
+저는 종종 집 근처의 빵집에 갑니다.
+그곳에 가면, 갓 구운 빵을 사곤 합니다. 
+저희 어머니와 저는 빵을 매우 좋아하기 때문입니다.
 전반적으로 우리 동네는 참 살기 좋은 곳입니다.
 
 
@@ -106,6 +111,12 @@ Due to the changes, my town has developed a lot, but i miss my old town because 
 게다가, 집 근처에 몇몇 음식점들도 생겨났습니다. 
 이러한 변화들로, 저희 동네도 많은 발전이 있었지만, 저는 옛 기억을 떠올리게 하는 예전의 동네가 그립기도 합니다.
 
+I have moved two months. 
+So I do not really know the change in the current town.
+But
+There are more apartments and houses than old town.
+Also, I can find many banks, bakeries, restaurants, large markets, and stores near my house.
+Due to the changes, It became convenient for me.
 
 - 동네에서 기억에 남는 기억
 I think it was right after I moved into my new apartment. 
