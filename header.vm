@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$!domain</title>
+    <link href="http://$!domain/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://$!domain/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="http://$!domain/css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+    <link href="http://$!domain/css/animate.css" rel="stylesheet">
+    <link href="http://$!domain/css/style.css" rel="stylesheet">
+	<link href="http://$!domain/css/plugins/iCheck/custom.css" rel="stylesheet">
+		
+	<!-- Mainly scripts -->
+    <script src="http://$!domain/js/jquery-2.1.1.js"></script>
+    <script src="http://$!domain/js/jquery-ui.custom.min.js" type="text/javascript"></script>
+    <script src="http://$!domain/js/bootstrap.min.js"></script>
+    <script src="http://$!domain/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="http://$!domain/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="http://$!domain/js/plugins/jeditable/jquery.jeditable.js"></script>
+    <script src="http://$!domain/js/plugins/dataTables/datatables.min.js"></script>
+	<script src="http://$!domain/js/plugins/iCheck/icheck.min.js"></script>
+
+
+    <!-- Custom and plugin javascript -->
+    <script src="http://$!domain/js/inspinia.js"></script>
+    <script src="http://$!domain/js/plugins/pace/pace.min.js"></script>
+    <script src="http://$!domain/js/header.js"></script>
+	<script src="http://$!domain/js/common/common.js"></script>
+	<script src="http://$!domain/js/common/common-proc.js"></script>
+</head>
+<script>
+function setBodySkin() {
+	var bodySkin = getCookie("bodySkin");
+	$("#bodySkin").addClass(bodySkin);
+}
+function getCookie(cName) {
+    cName = cName + '=';
+    var cookieData = document.cookie;
+    var start = cookieData.indexOf(cName);
+    var cValue = '';
+    if(start != -1){
+        start += cName.length;
+        var end = cookieData.indexOf(';', start);
+        if(end == -1)end = cookieData.length;
+        cValue = cookieData.substring(start, end);
+    }
+    return unescape(cValue);
+}
+</script>
+<body id="bodySkin" onload="setBodySkin();">
+    <div id="wrapper">
+		#parse("/layout/sideMenu.vm")
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <a href="/main/main.do"><span class="m-r-sm text-muted welcome-message">Welcome to Graph Admin</span></a>
+                        </li>
+						<li>
+							<a href="/main/main.do"><i class="fa fa-home"></i></a>
+						</li>
+						
+						<!-- 대기 카운트-->
+						#if($!MemberAdmin.MEM_TYPE_CODE != "ME302")
+						<li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-pause"></i>  <span class="label label-primary" id="mainMoneyHoldCount"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="/money/moneyInOutMain.do?TYPE=in">
+                                        <div>
+                                            <i class="fa angle-double-down"></i> <strong id="mainMoneyHoldMsg"></strong>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+						
+						<!-- 충전 카운트-->
+						<li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-thumbs-o-up"></i>  <span class="label label-primary" id="mainMoneyInCount"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="/money/moneyInOutMain.do?TYPE=in">
+                                        <div>
+                                            <i class="fa angle-double-down"></i> <strong id="mainMoneyInMsg"></strong>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+						
+						<!-- 환전 카운트-->
+						<li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-thumbs-o-down"></i>  <span class="label label-primary" id="mainMoneyOutCount"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="/money/moneyInOutMain.do?TYPE=out">
+                                        <div>
+                                            <i class="fa angle-double-up"></i> <strong id="mainMoneyOutMsg"></strong>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+						
+						<!-- 고객센터 카운트-->
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-envelope"></i> <span class="label label-warning" id="mainQNACount"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages">
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="/board/qnaMain.do">
+                                            <i class="fa fa-envelope"></i><strong id="mainQNAMsg"></strong>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- 가입 대기 카운트-->
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-envelope"></i> <span class="label label-warning" id="mainUserHoldCount"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages">
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="/member/memberManage.do">
+                                            <i class="fa fa-envelope"></i><strong id="mainUserHoldMsg"></strong>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        #end
+                        <li>
+                            <a href="/login/logout.do">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div> <!-- row border-bottom -->
+
+            <div class="row">
+                <div id="liveStatusContainer" class="col-lg-6" style="display:none">
+                </div>
+            </div>
+    
