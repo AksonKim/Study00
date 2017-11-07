@@ -1,0 +1,12 @@
+            <div class="footer">
+                <div class="pull-right">
+                     <strong>$!domain</strong>
+                </div>
+                <div>
+                    <strong>Copyright</strong> &copy; 2017
+                </div>
+            </div>
+		</div> <!-- page-wrapper -->
+    </div><!-- wrapper -->
+</body>
+</html>
