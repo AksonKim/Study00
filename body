@@ -1,0 +1,56 @@
+	#parse("/$!SERVICE_CODE/layout/header.vm")
+		<div class="full-height-scroll white-bg border-left">
+            <div class="element-detail-box">
+				<div class="col-md-12">
+                    <div class="col-md-6" id="chart-container">
+						<canvas id="canvas"  width="600" height="320"></canvas>
+					</div>
+                    <div class="col-md-6">
+						베팅창<br>
+						<button type="button" class="btn btn-w-m btn-info" onclick="start()">start</button><br>
+                        <button type="button" class="btn btn-w-m btn-danger" onclick="end()">stop</button><br>
+						
+						<form>
+                            <!-- 송신 메시지 작성하는 창 -->
+                            <input id="textMessage" type="text">
+                            <!-- 송신 버튼 -->
+                            <input onclick="sendMessage()" value="Send" type="button">
+                            <!-- 종료 버튼 -->
+                            <input onclick="disconnect()" value="Disconnect" type="button">
+                        </form>
+                        <br />
+                        <!-- 결과 메시지 보여주는 창 -->
+                        <textarea id="messageTextArea" rows="10" cols="50"></textarea>
+					</div>
+				</div>
+				<!--
+				<div class="col-md-4">
+					<table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Mark</td><td>Otto</td><td>@mdo</td></tr>
+                            <tr><td>2</td><td>Jacob</td><td>Thornton</td><td>@fat</td></tr>
+                            <tr><td>2</td><td>Jacob</td><td>Thornton</td><td>@fat</td></tr>
+                            <tr><td>2</td><td>Jacob</td><td>Thornton</td><td>@fat</td></tr>
+                            <tr><td>2</td><td>Jacob</td><td>Thornton</td><td>@fat</td></tr>
+                            <tr><td>2</td><td>Jacob</td><td>Thornton</td><td>@fat</td></tr>
+                            <tr><td>2</td><td>Jacob</td><td>Thornton</td><td>@fat</td></tr>
+                            <tr><td>2</td><td>Jacob</td><td>Thornton</td><td>@fat</td></tr>
+                            <tr><td>2</td><td>Jacob</td><td>Thornton</td><td>@fat</td></tr>
+                            <tr><td>2</td><td>Jacob</td><td>Thornton</td><td>@fat</td></tr>
+                        </tbody>
+                    </table>
+				</div>
+				-->
+            </div>
+        </div>
+		<script src="/js/graphGame.js"></script>
+	#parse("/$!SERVICE_CODE/layout/footer.vm")    
+
